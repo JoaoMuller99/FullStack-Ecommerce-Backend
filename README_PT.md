@@ -1,6 +1,6 @@
 # BEM-VINDO || WELCOME
 
-**To read this README in english click [here](https://github.com/JoaoMuller99/FullStack-Ecommerce-Backend/blob/main/README.md)!**
+**To read this README in english click [here](https://github.com/JoaoMuller99/FullStack-Ecommerce-Backend)!**
 
 ## Esse projeto foi construído com
 
