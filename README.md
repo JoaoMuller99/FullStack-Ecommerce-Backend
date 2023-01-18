@@ -1,57 +1,65 @@
-# 🚀 Getting started with Strapi
+# WELCOME || BEM-VINDO
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+**Para ler esse README em português clique [aqui](https://github.com/JoaoMuller99/FullStack-Ecommerce-Backend/blob/main/README_PT.md)!**
 
-### `develop`
+## This project was built with
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+- [Strapi](https://strapi.io/)
+- [Graphql](https://graphql.org/)
+- [Cloudinary](https://cloudinary.com/)
 
-```
-npm run develop
-# or
-yarn develop
-```
+**To access the Front-end repository click [here](https://github.com/JoaoMuller99/FullStack-Ecommerce-Frontend)!**
 
-### `start`
+## Getting Started
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+- First, install the packages by running:
 
-```
-npm run start
-# or
-yarn start
-```
+  ```bash
+  npm install
+  # or
+  yarn install
+  ```
 
-### `build`
+- After that, **IN ANOTHER DIRECTORY** run the following:
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+  ```bash
+  npx create-strapi-app@latest my-project
+  ```
 
-```
-npm run build
-# or
-yarn build
-```
+- In the _my-project_ folder copy the **.env** file and paste it in the root directory of this cloned repository (_this process is only made to get the keys needed to run the strapi project_).
 
-## ⚙️ Deployment
+- You can now delete the _my-project_ folder.
 
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+- In the **.env** file, add the following (see [more](#cloudinary) about how to set up Cloudinary):
 
-## 📚 Learn more
+  ```bash
+  CLOUDINARY_NAME=YOUR CLOUDINARY NAME
+  CLOUDINARY_KEY=YOUR CLOUDINARY KEY
+  CLOUDINARY_SECRET=YOUR CLOUDINARY SECRET
+  ```
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+- Start the development server by running:
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+  ```bash
+  npm run develop
+  # or
+  yarn develop
+  ```
 
-## ✨ Community
+- Go to [http://localhost:1337/admin/auth/register-admin](http://localhost:1337/admin/auth/register-admin) and create an account.
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+- After that, go to _Settings_, under _USERS & PERMISSIONS PLUGIN_ go to _Roles > Public > Product_ and check the options _find_ and _findOne_ then click _Save_.
 
----
+- Now go to _Content Manager_ and click on _Product_. This is the page where you can create the products to your E-commerce. _Be aware that the currency is set to BRL in the Front-end repository_.
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+- You can create any product you want. To help you I added [images](https://github.com/JoaoMuller99/FullStack-Ecommerce-Backend/tree/main/public/products_imgs) and [descriptions](https://github.com/JoaoMuller99/FullStack-Ecommerce-Backend/tree/main/public/products_descriptions) to a few products.
+
+<h2 id="cloudinary">Setting Up Cloudinary</h2>
+
+1. Create an account at [https://cloudinary.com/](https://cloudinary.com/).
+2. Go to _Dashboard_.
+3. Copy and paste at your **.env** file the needed keys.
+
+## Finally
+
+This project was created for educational purposes only, so feel free to make some tweaks if you want to. Thank you so much for trying it out!
