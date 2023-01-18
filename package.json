@@ -2,7 +2,7 @@
   "name": "backend",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "iPad Store",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -18,7 +18,7 @@
     "better-sqlite3": "^7.4.6"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "João Pedro Müller"
   },
   "strapi": {
     "uuid": "b26d3a01-7054-4a3a-9ecd-084461b7cdc4"
